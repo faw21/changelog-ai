@@ -168,6 +168,8 @@ gh release create v1.3.0 --notes-file release-notes.txt
 
 **[critiq](https://github.com/faw21/critiq)** — AI code reviewer that runs locally before you push.
 
+**[git-chronicle](https://github.com/faw21/chronicle)** — AI-powered git history narrator. Turns your git log into engaging stories (narrative, timeline, or detective mode).
+
 ```bash
 # The complete AI-powered git workflow:
 standup-ai --yesterday                                    # 1. morning standup
