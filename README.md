@@ -166,13 +166,16 @@ gh release create v1.3.0 --notes-file release-notes.txt
 
 **[standup-ai](https://github.com/faw21/standup-ai)** — Generate daily standups from git commits.
 
+**[critiq](https://github.com/faw21/critiq)** — AI code reviewer that runs locally before you push.
+
 ```bash
 # The complete AI-powered git workflow:
 standup-ai --yesterday                                    # 1. morning standup
-gitbrief . --changed-only                                # 2. pack context for review
-gpr                                                       # 3. generate PR description
-gpr --commit-run                                          # 4. commit with AI message
-changelog-ai --release-version v1.x.0 --prepend CHANGELOG.md  # 5. update changelog
+critiq                                                    # 2. AI review before committing
+gpr --commit-run                                          # 3. commit with AI message
+gitbrief . --changed-only --clipboard                    # 4. pack context for PR review
+gpr                                                       # 5. generate PR description
+changelog-ai --release-version v1.x.0 --prepend CHANGELOG.md  # 6. update changelog
 ```
 
 ---
