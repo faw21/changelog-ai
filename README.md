@@ -12,7 +12,7 @@ changelog-ai --prepend CHANGELOG.md   # write to file
 [![PyPI version](https://img.shields.io/pypi/v/changelog-ai.svg)](https://pypi.org/project/changelog-ai/)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Tests](https://img.shields.io/badge/tests-49%20passing-brightgreen.svg)](https://github.com/faw21/changelog-ai)
+[![Tests](https://github.com/faw21/changelog-ai/actions/workflows/tests.yml/badge.svg)](https://github.com/faw21/changelog-ai/actions/workflows/tests.yml)
 
 ---
 
