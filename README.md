@@ -143,6 +143,35 @@ Utilities:
 
 ---
 
+## GitHub Actions
+
+Use [changelog-ai-action](https://github.com/faw21/changelog-ai-action) to automate changelog generation in CI:
+
+```yaml
+# .github/workflows/changelog.yml
+on:
+  release:
+    types: [created]
+
+jobs:
+  changelog:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: faw21/changelog-ai-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          post_to_release: 'true'   # updates Release body
+          commit_changelog: 'true'  # commits CHANGELOG.md
+```
+
+---
+
 ## Tips
 
 ```bash
@@ -199,6 +228,8 @@ pytest tests/   # 49 tests, 87% coverage
 ---
 
 - [difftests](https://github.com/faw21/difftests) — AI test generator from git diffs
+
+- [changelog-ai-action](https://github.com/faw21/changelog-ai-action) — this tool as a GitHub Action (auto-generate changelog on release)
 
 - [critiq-action](https://github.com/faw21/critiq-action) — critiq as a GitHub Action for CI
 
