@@ -176,11 +176,12 @@ gh release create v1.3.0 --notes-file release-notes.txt
 # The complete AI-powered git workflow:
 standup-ai --yesterday                                    # 1. morning standup
 critiq                                                    # 2. AI review before committing
-gpr --commit-run                                          # 3. commit with AI message
-gitbrief . --changed-only --clipboard                    # 4. pack context for PR review
-gpr                                                       # 5. generate PR description
-prcat 42                                                  # 6. AI review of teammate's PR
-changelog-ai --release-version v1.x.0 --prepend CHANGELOG.md  # 7. update changelog
+testfix pytest                                            # 3. Auto-fix failing tests
+gpr --commit-run                                          # 4. commit with AI message
+gitbrief . --changed-only --clipboard                    # 5. pack context for PR review
+gpr                                                       # 6. generate PR description
+prcat 42                                                  # 7. AI review of teammate's PR
+changelog-ai --release-version v1.x.0 --prepend CHANGELOG.md  # 8. update changelog
 ```
 
 ---
@@ -201,7 +202,7 @@ pytest tests/   # 49 tests, 87% coverage
 
 - [critiq-action](https://github.com/faw21/critiq-action) — critiq as a GitHub Action for CI
 
-- [testfix](https://github.com/faw21/testfix) — AI test fixer — automatically fix failing tests
+- [testfix](https://github.com/faw21/testfix) — AI failing test auto-fixer
 
 - [mergefix](https://github.com/faw21/mergefix) — AI merge conflict resolver: fix all conflicts with one command
 
