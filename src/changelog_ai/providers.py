@@ -44,7 +44,7 @@ class OpenAIProvider(LLMProvider):
         resp = self._client.chat.completions.create(
             model=self._model,
             messages=[{"role": "user", "content": prompt}],
-            max_tokens=2048,
+            max_completion_tokens=2048,
         )
         return resp.choices[0].message.content.strip()
 
@@ -62,7 +62,7 @@ class OllamaProvider(LLMProvider):
         resp = self._client.chat.completions.create(
             model=self._model,
             messages=[{"role": "user", "content": prompt}],
-            max_tokens=2048,
+            max_completion_tokens=2048,
         )
         return resp.choices[0].message.content.strip()
 
