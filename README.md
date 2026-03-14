@@ -197,6 +197,10 @@ pytest tests/   # 49 tests, 87% coverage
 
 ---
 
+- [difftests](https://github.com/faw21/difftests) — AI test generator from git diffs
+
+- [critiq-action](https://github.com/faw21/critiq-action) — critiq as a GitHub Action for CI
+
 ## License
 
 MIT
