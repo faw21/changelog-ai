@@ -201,6 +201,10 @@ pytest tests/   # 49 tests, 87% coverage
 
 - [critiq-action](https://github.com/faw21/critiq-action) — critiq as a GitHub Action for CI
 
+- [testfix](https://github.com/faw21/testfix) — AI test fixer — automatically fix failing tests
+
+- [mergefix](https://github.com/faw21/mergefix) — AI merge conflict resolver: fix all conflicts with one command
+
 ## License
 
 MIT
